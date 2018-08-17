@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyCustomSegment">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77b-UF-GNn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBg-MA-Nts">
+                    <rect key="frame" x="97" y="0.0" width="90" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="Wkn-Jk-9gB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="推荐用户"/>
+                    <connections>
+                        <action selector="recommandClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="EXq-zu-gPc"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejL-PE-wwS">
+                    <rect key="frame" x="187" y="0.0" width="1" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="IL9-8d-teI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MV4-zB-eu1">
+                    <rect key="frame" x="97" y="39" width="90" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e35-hc-QBP">
+                    <rect key="frame" x="188" y="0.0" width="90" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="XAU-V9-dWd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="我的蜜圈"/>
+                    <connections>
+                        <action selector="quanClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="SFr-7J-1Pi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="77b-UF-GNn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2sR-YY-TDf"/>
+                <constraint firstItem="MV4-zB-eu1" firstAttribute="top" secondItem="SBg-MA-Nts" secondAttribute="bottom" id="3Sk-5q-A59"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SBg-MA-Nts" secondAttribute="bottom" constant="1" id="3a7-v7-ulz"/>
+                <constraint firstItem="e35-hc-QBP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8MX-x6-gw7"/>
+                <constraint firstItem="MV4-zB-eu1" firstAttribute="trailing" secondItem="SBg-MA-Nts" secondAttribute="trailing" id="9Ga-F7-btN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="77b-UF-GNn" secondAttribute="trailing" id="CZ6-4e-FnR"/>
+                <constraint firstItem="e35-hc-QBP" firstAttribute="leading" secondItem="ejL-PE-wwS" secondAttribute="trailing" id="Fzs-3N-Stm"/>
+                <constraint firstItem="SBg-MA-Nts" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="HCf-s3-olG"/>
+                <constraint firstAttribute="bottom" secondItem="ejL-PE-wwS" secondAttribute="bottom" id="Mcx-Y6-EPk"/>
+                <constraint firstItem="ejL-PE-wwS" firstAttribute="leading" secondItem="SBg-MA-Nts" secondAttribute="trailing" id="Nzf-G9-EY0"/>
+                <constraint firstItem="77b-UF-GNn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="k5E-y4-Zw7"/>
+                <constraint firstItem="MV4-zB-eu1" firstAttribute="leading" secondItem="SBg-MA-Nts" secondAttribute="leading" id="sRn-ZG-kfm"/>
+                <constraint firstItem="e35-hc-QBP" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="1" id="ucO-Xk-VIp"/>
+                <constraint firstItem="ejL-PE-wwS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vrq-a7-kv2"/>
+                <constraint firstItem="77b-UF-GNn" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="y1z-7w-DKB"/>
+                <constraint firstItem="ejL-PE-wwS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="z6D-bZ-xkw"/>
+                <constraint firstItem="MV4-zB-eu1" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="zaH-ow-NvD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="littleView" destination="MV4-zB-eu1" id="Oxp-Ko-MfQ"/>
+                <outlet property="miquan" destination="e35-hc-QBP" id="b9M-dc-BXR"/>
+                <outlet property="recommand" destination="SBg-MA-Nts" id="adw-cl-68o"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="352"/>
+        </view>
+    </objects>
+</document>
